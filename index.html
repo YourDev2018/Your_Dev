@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Your_Dev</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <style type="text/css">
+
+  /* Celulares */
+  .formulario
+  {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .formulario-campo
+  {
+    font-size: 15px;
+  }
+
+  @media (max-width: 767px)
+  {
+    .img-center {margin:0 auto;}
+    .logo-inicio
+    {
+      margin-top: 30px;
+    }
+    .sub-titulo-logo
+    {
+      font-family: 'Raleway';
+      font-weight: 500;
+      font-size: 25px;
+      color: white;
+      margin-bottom: 100px;
+    }
+    .logo-grande
+    {
+      display: none;
+    }
+    .logo-pequena
+    {
+      display: block;
+    }
+    .descricao_1
+    {
+      font-family: 'Raleway';
+      font-weight: 300;
+      font-size: 15px;
+      color: white;
+    }
+    .descricao_8
+    {
+      font-family: 'Raleway';
+      font-weight: 500;
+      font-size: 25px;
+      color: white;
+    }
+    .equipe-grande
+    {
+      display: block;
+    }
+    .equipe-pequena
+    {
+      display: none;
+    }
+    .contato
+    {
+      font-size: 20px;
+    }
+    .footer_texto
+    {
+      font-weight: 300;
+      margin-top: 10px;
+      font-size: 10px;
+      margin-bottom: 15px;
+    }
+    .numero_descricao_5
+    {
+      font-family: 'Raleway';
+      font-weight: 700;
+      font-size: 50px;
+      color: white;
+    }
+  }
+  /* Todos não celulares */
+  @media (min-width: 768px)
+  {
+    .img-center {margin:0 auto;}
+    .logo-inicio
+    {
+      margin-top: 30px;
+    }
+    .sub-titulo-logo
+    {
+      font-family: 'Raleway';
+      font-weight: 500;
+      font-size: 35px;
+      color: white;
+      margin-bottom: 100px;
+    }
+    .logo-grande
+    {
+      display: block;
+    }
+    .logo-pequena
+    {
+      display: none;
+    }
+    .descricao_1
+    {
+      font-family: 'Raleway';
+      font-weight: 300;
+      font-size: 25px;
+      color: white;
+    }
+    .descricao_2
+    {
+      font-family: 'Raleway';
+      font-weight: 300;
+      font-size: 30px;
+      color: white;
+    }
+    .descricao_3
+    {
+      font-family: 'Raleway';
+      font-weight: 300;
+      font-size: 50px;
+      color: white;
+    }
+    .nav_botao
+    {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .numero_descricao_5
+    {
+      font-family: 'Raleway';
+      font-weight: 700;
+      font-size: 100px;
+      color: white;
+    }
+    .descricao_5
+    {
+      font-size: 20px;
+    }
+    .descricao_6
+    {
+      font-family: 'Raleway';
+      font-weight: 300;
+      font-size: 60px;
+      color: black;
+    }
+    .descricao_7
+    {
+      font-family: 'Raleway';
+      font-weight: 300;
+      font-size: 30px;
+      color: white;
+    }
+    .icons
+    {
+      font-size: 70px;
+    }
+    .linha_vazia
+    {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .equipe-grande
+    {
+      display: block;
+    }
+    .equipe-pequena
+    {
+      display: none;
+    }
+    .equipe
+    {
+
+    }
+    .descricao_8
+    {
+      font-family: 'Raleway';
+      font-weight: 900;
+      font-size: 40px;
+      color: white;
+    }
+    .descricao_8_sub
+    {
+      font-family: 'Raleway';
+      font-weight: 300;
+      font-size: 22px;
+      color: white;
+    }
+    .descricao_10
+    {
+      font-family: 'Raleway';
+      font-weight: 500;
+      font-size: 40px;
+      color: white;
+    }
+    .contato
+    {
+      font-size: 30px;
+    }
+    .footer_texto
+    {
+      font-weight: 300;
+      margin-top: 10px;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  </style>
+
+  <script type="text/javascript">
+  function scrollToFormulario() {
+      console.log("teste");
+      $('html, body').animate({ scrollTop: $('#formulario').offset().top }, 'slow');
+      return false;
+  }
+  </script>
+
+<body>
+
+<div class="img-responsive img-center" style="background: url('img/fundo_1.jpg'); background-repeat: no-repeat; background-size: cover; background-position : center;">
+
+<!-- NAV -->
+  <div class="container">
+    <div class="row justify-content-center" style="display:flex; align-items:center;" >
+        <!-- <img src="img/logo_sm.png" width="96" height="75" alt="">
+        <a class="nav_botao" style="color: white;" href="#">Home</a>
+        <a class="nav_botao" style="color: white;" href="#">Features</a>
+        <a class="nav_botao" style="color: white;" href="#">Features</a>
+        <a class="nav_botao" style="color: white;" href="#">Features</a>
+        <a class="nav_botao" style="color: white;" href="#">Features</a> -->
+    </div>
+  </div>
+
+<!-- LOGO E TEXT HEADER -->
+
+    <div class="container-fluid logo-inicio" style="width: 50%;">
+      <div class="row justify-content-center">
+        <div class="lg-12 text-center">
+        <img class="img-responsive logo-grande" src="img/logo_menor.png" alt="Your_Dev">
+        <img class="img-responsive logo-pequena" src="img/logo_md.png" alt="Your_Dev">
+        </div>
+      </div>
+        <div class="row justify-content-center">
+        <div class="lg-12 text-center sub-titulo-logo">
+          Desenvolvemos suas ideias
+          <br>
+          do <a style="font-weight: bold; font-weight: 900;">seu</a> jeito.
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- DESCRICAO 1 -->
+
+
+
+<div class="img-responsive img-center descricao_1">
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-center text-center ">
+    <div class="col-lg-2" style="background-color: transparent">
+    </div>
+    <div class="col-lg-8" style="color: black">
+      <br>
+      <a style="font-weight: bold; font-weight: 700;">
+      Ajudamos novos empreendedores e startups a desenvolverem seu primeiro protótipo digital.
+      </a>
+      <br><br>
+      <button type="button" onclick="scrollToFormulario();" class="btn btn-outline-primary">Tirar ideia do papel</button>
+    </div>
+    <div class="col-lg-2" style="background-color: transparent">
+    </div>
+  </div>
+    <br><br>
+
+  </div>
+
+</div>
+
+<!-- DESCRICAO 2 -->
+
+<!-- <div class="img-responsive img-center descricao_2" style="background-color: white; background-repeat: no-repeat; background-size: cover; background-position : center;">
+
+  <br><br><br>
+  <div class="container-fluid">
+    <div class="row" style="color: black;">
+      <div class="col-lg-2" style="background-color: transparent">
+      </div>
+    <div class="col-lg-4" style="background-color: transparent; font-weight: 500;">
+       Nossos devs desenvolvem seu projeto desde o início, <a style="font-weight: bold; font-weight: 900;">tornando funcional tudo aquilo que você tanto deseja</a>, através de um website, aplicativo ou plataforma web.
+      <br><br><br>
+    </div>
+    <div class="col-lg-4" style="background-color: transparent; font-weight: 500;">
+      Queremos ajudar novos empreendedores e startups a desenvolverem seu primeiro protótipo digital.
+    </div>
+    <br><br>
+    <div class="col-lg-2" style="background-color: transparent">
+    </div>
+  </div>
+    <br>
+
+  </div>
+
+</div> -->
+
+<!-- DESCRICAO 3 -->
+
+<div class="img-responsive img-center descricao_3" style="background: url('img/fundo_4.jpg'); background-repeat: no-repeat; background-size: cover; background-position : center;">
+
+  <br><br><br>
+  <div class="container-fluid">
+    <div class="row justify-content-center text-center" style="color: white;">
+      <div class="col-lg-2" style="background-color: transparent">
+      </div>
+    <div class="col-lg-8" style="background-color: transparent">
+      Transforme suas ideias em realidade
+      <br><br><br>
+    </div>
+    <br><br>
+    <div class="col-lg-2" style="background-color: transparent">
+    </div>
+  </div>
+  </div>
+  <br>
+
+</div>
+
+<!-- DESCRICAO 4 -->
+
+<div class="img-responsive img-center descricao_2" style="background-color: white; background-repeat: no-repeat; background-size: cover; background-position : center;">
+
+  <br><br>
+  <div class="container-fluid">
+    <div class="row" style="color: black;">
+      <div class="col-lg-2" style="background-color: transparent">
+      </div>
+    <div class="col-lg-8" style="background-color: transparent; font-weight: 500;">
+      Acompanhamos o <a style="font-weight: bold; font-weight: 900;">crescimento do seu negócio</a> e nos tornamos um <a style="font-weight: bold; font-weight: 900;">braço de tecnologia</a> estratégico do seu empreendimento.
+      <br>
+    </div>
+    <br><br><br>
+    <div class="col-lg-2" style="background-color: transparent">
+    </div>
+  </div>
+    <br>
+
+  </div>
+
+</div>
+
+<!-- DESCRICAO 5 -->
+
+<div class="img-responsive img-center descricao_2" style="background: url('img/fundo_5.jpg'); background-repeat: no-repeat; background-size: cover; background-position : center;">
+
+
+
+  <!-- <div class="container-fluid">
+    <div class="row numero_descricao_5" style="color: white;">
+      <div class="col-lg-2" style="background-color: transparent">
+      </div>
+      <div class="lg-4 md-6" style="background-color: transparent">
+        01
+      </div>
+      <div class="lg-4 md-6" style="background-color: transparent">
+        02
+      </div>
+      <div class="col-lg-2" style="background-color: transparent">
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container-fluid">
+    <div class="row descricao_5" style="color: white;">
+      <div class="col-lg-2" style="background-color: transparent">
+      </div>
+    <div class="col-lg-2" style="background-color: transparent; font-weight: 300;">
+      <a class="numero_descricao_5">01</a> <br>
+      Analisamos e reduzimos o escopo do seu projeto.
+      <br>
+    </div>
+    <div class="col-lg-2" style="background-color: transparent; font-weight: 300;">
+      <a class="numero_descricao_5">02</a> <br>
+      Desenvolvemos seu projeto a um valor acessível.
+    </div>
+    <br><br>
+    <div class="col-lg-2" style="background-color: transparent; font-weight: 300;">
+      <a class="numero_descricao_5">03</a> <br>
+      Nos tornamos parte do seu time de tecnologia.
+    </div>
+    <br><br>
+    <div class="col-lg-2" style="background-color: transparent; font-weight: 300;">
+      <a class="numero_descricao_5">04</a> <br>
+      Atendemos seus pedidos, sob demanda, conforme o crescimento do seu negócio.
+    </div>
+    <br>
+    <div class="col-lg-12 text-center" style="background-color: transparent; font-weight: 300;">
+      <!-- <a class="numero_descricao_5">04</a> <br> -->
+      <br>
+      <button type="button" onclick="scrollToFormulario();" class="btn btn-outline-secondary">Somos Your_Dev</button>
+      <br>
+      <br>
+    </div>
+    <br>
+    <div class="col-lg-2" style="background-color: transparent">
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+<!-- DESCRICAO 6 -->
+
+<div class="img-responsive img-center descricao_6" style="background-color: white; background-repeat: no-repeat; background-size: cover; background-position : center;">
+  <br>
+  <div class="container-fluid">
+    <div class="row justify-content-center text-center ">
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+    <div class="col-lg-10">
+      Tornamos <a style="font-weight: bold; font-weight: 900;">real</a> o seu primeiro projeto digital.
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+  </div>
+    <br>
+  </div>
+
+</div>
+
+<!-- DESCRICAO 7 -->
+
+<!-- <div class="img-responsive img-center descricao_7" style="background-color: white; color: black">
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+
+
+
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+      <i class="material-icons icons">settings</i>
+    </div>
+    <div class="col-lg-4">
+      <a style="font-weight: bold; font-weight: 900;">Título</a>
+      <br>
+      Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+      <i class="material-icons icons">settings</i>
+    </div>
+    <div class="col-lg-4">
+      <a style="font-weight: bold; font-weight: 900;">Título</a>
+      <br>
+      Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+
+
+    <div class="col-lg-12 linha_vazia" style="background-color: transparent;"></div>
+
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+      <i class="material-icons icons">settings</i>
+    </div>
+    <div class="col-lg-4">
+      <a style="font-weight: bold; font-weight: 900;">Título</a>
+      <br>
+      Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+      <i class="material-icons icons">settings</i>
+    </div>
+    <div class="col-lg-4">
+      <a style="font-weight: bold; font-weight: 900;">Título</a>
+      <br>
+      Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+
+  </div>
+    <br>
+  </div>
+
+</div> -->
+
+<!-- DESCRICAO 8 -->
+
+<div class="img-responsive img-center descricao_8" style="background: url('img/fundo_2.jpg'); background-repeat: no-repeat; background-size: cover; background-position : center;">
+  <br>
+  <div class="container-fluid">
+
+    <!-- LINHA 1 -->
+
+    <div class="row justify-content-center text-center ">
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+    <div class="col-lg-10">
+      Nosso time
+      <br><br>
+    </div>
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+  </div>
+
+    <!-- LINHA 2 -->
+
+    <div class="row justify-content-center text-center">
+    <div class="lg-2 equipe">
+      <img class="img-responsive equipe-grande" src="img/matheus.jpg" alt="Your_Dev">
+      <br>
+      <a style="font-weight: bold; font-weight: 300;">Matheus</a>
+      <br>
+      <a class="descricao_8_sub">Consultor</a>
+      <br><br>
+    </div>
+    <div class="lg-2 equipe">
+      <img class="img-responsive equipe-grande" src="img/dezembro.jpg" alt="Your_Dev">
+      <br>
+      <a style="font-weight: bold; font-weight: 300;">João</a>
+      <br>
+      <a class="descricao_8_sub">Full Stack</a>
+      <br><br>
+    </div>
+    <div class="lg-2 equipe">
+      <img class="img-responsive equipe-grande" src="img/morgado.jpg" alt="Your_Dev">
+      <br>
+      <a style="font-weight: bold; font-weight: 300;">Guilherme</a>
+      <br>
+      <a class="descricao_8_sub">Mobile Dev</a>
+      <br><br>
+    </div>
+  </div>
+  <br>
+
+  </div>
+</div>
+
+<!-- DESCRICAO 9 -->
+
+<div class="img-responsive img-center descricao_8" style="background-color:white; background-repeat: no-repeat; background-size: cover; background-position : center;">
+  <br>
+  <div class="container-fluid" style="border-bottom: 1.2px solid #B1B1B2;">
+
+<!-- linha 1 -->
+
+    <div class="row justify-content-center text-center ">
+    <div class="col-lg-1" style="background-color: transparent">
+    </div>
+    <div class="col-lg-10">
+      <a style="color: black;font-weight: 300;">Nossos</a> <br> <a style="color: black;font-weight: bold; font-weight: 900;border-bottom: 2px solid black;"> Parceiros</a>
+    </div>
+    <div class="col-lg-1" style="background-color: transparent;">
+    </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+<!-- linha 2 -->
+
+<div class="img-responsive img-center descricao_8" style="background-color: white; background-repeat: no-repeat; background-size: cover; background-position : center;">
+  <div class="container-fluid">
+
+    <div class="row justify-content-center text-center">
+    <div class="lg equipe align-self-center">
+      <a href="http://www.encontroempreendedor.com.br/" target="_blank"><img class="img-responsive equipe-grande" src="img/ee.png" alt="Encontro Empreendedor"></a>
+      <br>
+    </div>
+    <div class="lg equipe align-self-center">
+      <a href="http://www.planejaconsultoria.com" target="_blank"><img class="img-responsive equipe-grande" src="img/planeja_logo.png" alt="Your_Dev"></a>
+      <br>
+    </div>
+    <div class="lg equipe align-self-center">
+      <a href="http://clubedonetworking.com.br" target="_blank"><img class="img-responsive equipe-grande" src="img/clube_networking.png" alt="Your_Dev"></a>
+      <br>
+    </div>
+    </div>
+
+    </div>
+    <br>
+  </div>
+
+    <!-- DESCRICAO 10 -->
+
+
+    <div  class="descricao_8" style=" background-color: #246A9C; background-repeat: no-repeat; background-size: cover; background-position : center;">
+      <div id="formulario" class="container">
+        <div class="row justify-content-center text-center" style="display:flex; align-items:center;border-bottom: 2px solid #10456b;">
+          <div  class="col-6 formulario">
+            <br>
+            Nos conte sua ideia e, juntos, vamos tirá-la do papel.
+            <br><br>
+              <form method="post" action="email/email.php">
+                <label for="nome" class="formulario-campo">Nome</label>
+                <input type="nome" name="Nome" class="form-control formulario-style" id="nome" aria-describedby="emailHelp" placeholder="Digite seu nome">
+                <br>
+                <label for="email" class="formulario-campo">Email</label>
+                <input type="email" name="Email" class="form-control formulario-style" id="email" aria-describedby="emailHelp" placeholder="Digite seu email">
+                <br>
+                <label for="telefone" class="formulario-campo">Telefone</label>
+                <input type="telefone" name="Telefone" class="form-control formulario-style" id="telefone" aria-describedby="emailHelp" placeholder="Digite seu telefone de contato">
+                <br>
+                <label for="projeto" class="formulario-campo">Ideia / Projeto</label>
+                <textarea class="form-control" name="Ideia" id="projeto" rows="3" placeholder="Nos conte mais detalhes da sua ideia para que possamos te ajudar a desenvolver seu protótipo digital."></textarea>
+                <br><br>
+                <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+              </form>
+              <br>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center" style="display:flex; align-items:center;">
+          <div class="lg equipe">
+            <img class="img-responsive logo-grande" src="img/logo_menor.png" alt="Your_Dev">
+            <img class="img-responsive logo-pequena" src="img/logo_md.png" alt="Your_Dev">
+          </div>
+          <div class="col-lg contato">
+            <br>
+            <a style="font-weight: 500;">Desenvolva seu projeto conosco!</a>
+            <br>
+            <br>
+            <a style="font-weight: 200;">contato@yourdev.com.br<a>
+            <br>
+            <a style="font-weight: 300;">(21) 99410-7858<a>
+          </div>
+      </div>
+      </div>
+      <br>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="img-responsive img-center descricao_8" style="background-color: #202020; background-repeat: no-repeat; background-size: cover; background-position : center;">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <!-- <div class="col-lg sociais">
+            Icones Sociais
+          </div> -->
+          <div class="col-lg footer_texto">
+            2018 yourdev - Todos os direitos resevados - Desenvolvido por Your < Dev >
+          </div>
+      </div>
+      </div>
+    </div>
+
+</body>
+
+<html>
